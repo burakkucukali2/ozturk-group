@@ -5,17 +5,16 @@ import Footer from "@/app/components/Footer";
 
 const companies = [
   {
-    name: "Anke Yapı ve İnşaat",
-    description:
-      "Anke Yapı ve İnşaat, 2010 yılında kurulmuş olup, inşaat sektöründe faaliyet göstermektedir. İnşaat sektöründe 10 yıllık tecrübesiyle, müşteri memnuniyetini ön planda tutarak, kaliteli ve güvenilir hizmet anlayışıyla çalışmalarını sürdürmektedir.",
-    link: "https://www.ankeyapi.com",
-    iconSrc: "/anke-logo.png",
-    iconWidth: 200,
+    name: "Estheturk Danışmanlık",
+    description: "Estheturk, 2010 yılında kurulmuş olup, inşaat sektöründe faaliyet göstermektedir. İnşaat sektöründe 10 yıllık tecrübesiyle, müşteri memnuniyetini ön planda tutarak, kaliteli ve güvenilir hizmet anlayışıyla çalışmalarını sürdürmektedir.",
+    link: "http://www.estheturk.com.tr/",
+    iconSrc: "/estheturk.png",
+    iconWidth: 150,
     iconHeight: 150,
   },
   {
     name: "Anke Yapı ve İnşaat",
-    description: "lorem20 lorem20 lorem20 lorem20 lorem20 lorem20 lorem20",
+    description: "Anke Yapı ve İnşaat, 2010 yılında kurulmuş olup, inşaat sektöründe faaliyet göstermektedir. İnşaat sektöründe 10 yıllık tecrübesiyle, müşteri memnuniyetini ön planda tutarak, kaliteli ve güvenilir hizmet anlayışıyla çalışmalarını sürdürmektedir.",
     link: "https://www.ankeyapi.com",
     iconSrc: "/anke-logo.png",
     iconWidth: 200,
