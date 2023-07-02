@@ -1,95 +1,53 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from "./page.module.css";
+import CompanySection from "@/app/components/CompanySection";
+import Card from "@/app/components/Card";
+import Footer from "@/app/components/Footer";
+
+const companies = [
+  {
+    name: "Anke Yapı ve İnşaat",
+    description:
+      "Anke Yapı ve İnşaat, 2010 yılında kurulmuş olup, inşaat sektöründe faaliyet göstermektedir. İnşaat sektöründe 10 yıllık tecrübesiyle, müşteri memnuniyetini ön planda tutarak, kaliteli ve güvenilir hizmet anlayışıyla çalışmalarını sürdürmektedir.",
+    link: "https://www.ankeyapi.com",
+    iconSrc: "/anke-logo.png",
+    iconWidth: 200,
+    iconHeight: 150,
+  },
+  {
+    name: "Anke Yapı ve İnşaat",
+    description: "lorem20 lorem20 lorem20 lorem20 lorem20 lorem20 lorem20",
+    link: "https://www.ankeyapi.com",
+    iconSrc: "/anke-logo.png",
+    iconWidth: 200,
+    iconHeight: 150,
+  },
+  {
+    name: "Anke Yapı ve İnşaat",
+    description:
+      "Anke Yapı ve İnşaat, 2010 yılında kurulmuş olup, inşaat sektöründe faaliyet göstermektedir. İnşaat sektöründe 10 yıllık tecrübesiyle, müşteri memnuniyetini ön planda tutarak, kaliteli ve güvenilir hizmet anlayışıyla çalışmalarını sürdürmektedir.",
+    link: "https://www.ankeyapi.com",
+    iconSrc: "/anke-logo.png",
+    iconWidth: 200,
+    iconHeight: 150,
+  },
+];
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <CompanySection />
+      <section className={styles.section}>
+        <div className={styles.content}>
+          {companies.map((company, index) => (
+            <Card key={index} company={company} />
+          ))}
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      </section>
+      <Footer>
+        <div className={styles.footer}>
+          <Footer />
+        </div>
+      </Footer>
     </main>
-  )
+  );
 }
