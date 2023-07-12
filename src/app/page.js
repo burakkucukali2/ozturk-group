@@ -1,33 +1,32 @@
 import styles from "./page.module.css";
 import CompanySection from "@/app/components/CompanySection";
 import Card from "@/app/components/Card";
-import Footer from "@/app/components/Footer";
 
 const companies = [
   {
     name: "Estheturk Danışmanlık",
-    description: "Estheturk, 2010 yılında kurulmuş olup, inşaat sektöründe faaliyet göstermektedir. İnşaat sektöründe 10 yıllık tecrübesiyle, müşteri memnuniyetini ön planda tutarak, kaliteli ve güvenilir hizmet anlayışıyla çalışmalarını sürdürmektedir.",
+    description: "2023 yılında kurulan Estheturk Danışmanlık, uzman kadrosuyla plastik cerrahi danışmanlık hizmeti sunmayı hedefleyen bir şirkettir. ",
     link: "http://www.estheturk.com.tr/",
-    iconSrc: "/estheturk.png",
-    iconWidth: 150,
-    iconHeight: 150,
+    iconSrc: "/estheturk.webp",
+    iconWidth: 210,
+    iconHeight: 50,
   },
   {
     name: "Anke Yapı ve İnşaat",
-    description: "Anke Yapı ve İnşaat, 2010 yılında kurulmuş olup, inşaat sektöründe faaliyet göstermektedir. İnşaat sektöründe 10 yıllık tecrübesiyle, müşteri memnuniyetini ön planda tutarak, kaliteli ve güvenilir hizmet anlayışıyla çalışmalarını sürdürmektedir.",
+    description: "2011'de kurulan Anke Yapı ve İnşaat, anahtar teslim projeler, kat karşılığı inşaat ve taahhüt hizmetleri veren bir firmadır. Müşteri memnuniyetine odaklanarak kaliteli ve güvenilir hizmet anlayışını benimser.",
     link: "https://www.ankeyapi.com",
-    iconSrc: "/anke-logo.png",
+    iconSrc: "/anke-logo.webp",
     iconWidth: 200,
     iconHeight: 150,
   },
   {
-    name: "Anke Yapı ve İnşaat",
-    description:
-      "Anke Yapı ve İnşaat, 2010 yılında kurulmuş olup, inşaat sektöründe faaliyet göstermektedir. İnşaat sektöründe 10 yıllık tecrübesiyle, müşteri memnuniyetini ön planda tutarak, kaliteli ve güvenilir hizmet anlayışıyla çalışmalarını sürdürmektedir.",
-    link: "https://www.ankeyapi.com",
-    iconSrc: "/anke-logo.png",
-    iconWidth: 200,
-    iconHeight: 150,
+    name: "RM Hukuk Bürosu",
+    description:"2019 yılında kurulan hukuk bürosu, müşterilere en iyi ve kaliteli hizmeti sunmayı hedefleyen bir vizyonla faaliyet göstermektedir. Hukuki ihtiyaçlarınızı karşılamak ve size çözüm sunmak için çalışmalarını sürdürmektedir.",
+    link: "/",
+    iconSrc: "/rm-logo.webp",
+    iconWidth: 100,
+    iconHeight: 180,
+    buttonDisabled: true,
   },
 ];
 
@@ -42,11 +41,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <Footer>
-        <div className={styles.footer}>
-          <Footer />
-        </div>
-      </Footer>
     </main>
   );
 }

@@ -51,9 +51,11 @@ function Card({ company }) {
         <div className={styles.back}>
           <span className={styles.title}>{company.name}</span>
           <p>{company.description}</p>
-          <a className={styles.btn} href={company.link} target="_blank">
-            Ziyaret Et
-          </a>
+          {!company.buttonDisabled && (
+              <a className={styles.btn} href={company.link} target="_blank">
+                Ziyaret Et
+              </a>
+          )}
         </div>
       </div>
     </div>
