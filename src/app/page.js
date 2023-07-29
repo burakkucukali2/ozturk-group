@@ -8,7 +8,7 @@ const companies = [
     description: "2023 yılında kurulan Estheturk Danışmanlık, uzman kadrosuyla plastik cerrahi danışmanlık hizmeti sunmayı hedefleyen bir şirkettir. ",
     link: "http://www.estheturk.com.tr/",
     iconSrc: "/estheturk.webp",
-    iconWidth: 210,
+    iconWidth: 250,
     iconHeight: 50,
   },
   {
@@ -16,7 +16,7 @@ const companies = [
     description: "2011'de kurulan Anke Yapı ve İnşaat, anahtar teslim projeler, kat karşılığı inşaat ve taahhüt hizmetleri veren bir firmadır. Müşteri memnuniyetine odaklanarak kaliteli ve güvenilir hizmet anlayışını benimser.",
     link: "https://www.ankeyapi.com",
     iconSrc: "/anke-logo.webp",
-    iconWidth: 200,
+    iconWidth: 250,
     iconHeight: 150,
   },
   {
@@ -24,7 +24,7 @@ const companies = [
     description:"2019 yılında kurulan hukuk bürosu, müşterilere en iyi ve kaliteli hizmeti sunmayı hedefleyen bir vizyonla faaliyet göstermektedir. Hukuki ihtiyaçlarınızı karşılamak ve size çözüm sunmak için çalışmalarını sürdürmektedir.",
     link: "/",
     iconSrc: "/rm-logo.webp",
-    iconWidth: 100,
+    iconWidth: 120,
     iconHeight: 180,
     buttonDisabled: true,
   },
